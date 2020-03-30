@@ -25,6 +25,10 @@ class ScannerViewController: UIViewController, CLLocationManagerDelegate, CBPeri
     @IBOutlet weak var lblCount: UILabel!
     @IBOutlet weak var switchEnableRanging: UISwitch!
     
+    override var preferredStatusBarStyle: UIStatusBarStyle {
+        return .lightContent
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 

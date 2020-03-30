@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14868" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="B9r-mc-3BF">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14824"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Scanner View Controller-->
+        <scene sceneID="Y94-tg-dh7">
+            <objects>
+                <viewController id="B9r-mc-3BF" customClass="ScannerViewController" customModule="Ranging" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="j0R-3N-kPD">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="yIe-uA-4u1">
+                                <rect key="frame" x="182.5" y="432.5" width="51" height="31"/>
+                                <connections>
+                                    <action selector="switchValueChanged:" destination="B9r-mc-3BF" eventType="valueChanged" id="PN9-De-vPE"/>
+                                </connections>
+                            </switch>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="START MONITORING" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bWe-V7-5oH">
+                                <rect key="frame" x="96" y="380" width="222" height="26"/>
+                                <fontDescription key="fontDescription" name="Futura-Bold" family="Futura" pointSize="20"/>
+                                <color key="textColor" systemColor="opaqueSeparatorColor" red="0.77647058820000003" green="0.77647058820000003" blue="0.7843137255" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EJA-43-aTt">
+                                <rect key="frame" x="20" y="755" width="374" height="55"/>
+                                <attributedString key="attributedText">
+                                    <fragment>
+                                        <string key="content">Reminder: 
+Keep your app in foreground for proper scanning of people near you.</string>
+                                        <attributes>
+                                            <color key="NSBackgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="calibratedRGB"/>
+                                            <color key="NSColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            <font key="NSFont" size="14" name="Futura-Medium"/>
+                                            <integer key="NSLigature" value="0"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" defaultTabInterval="32.100000000000001" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
+                                                <tabStops>
+                                                    <textTab alignment="left" location="32.099998474121094">
+                                                        <options/>
+                                                    </textTab>
+                                                </tabStops>
+                                            </paragraphStyle>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kTi-Qr-Yvk">
+                                <rect key="frame" x="207" y="423" width="0.0" height="0.0"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="80"/>
+                                <color key="textColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="6 Feet Away" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kdr-1t-9hb">
+                                <rect key="frame" x="106" y="111" width="202.5" height="39"/>
+                                <fontDescription key="fontDescription" name="Futura-Bold" family="Futura" pointSize="30"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" cocoaTouchSystemColor="viewFlipsideBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="9gc-b8-xUM" firstAttribute="trailing" secondItem="EJA-43-aTt" secondAttribute="trailing" constant="20" id="0LL-8x-ARi"/>
+                            <constraint firstItem="yIe-uA-4u1" firstAttribute="centerY" secondItem="j0R-3N-kPD" secondAttribute="centerY" id="Ca1-lI-hrJ"/>
+                            <constraint firstItem="yIe-uA-4u1" firstAttribute="centerX" secondItem="j0R-3N-kPD" secondAttribute="centerX" id="DaJ-Df-e4g"/>
+                            <constraint firstItem="bWe-V7-5oH" firstAttribute="centerY" secondItem="j0R-3N-kPD" secondAttribute="centerY" constant="-55" id="Hw9-xp-bPL"/>
+                            <constraint firstItem="EJA-43-aTt" firstAttribute="leading" secondItem="9gc-b8-xUM" secondAttribute="leading" constant="20" id="KZv-AE-b8e"/>
+                            <constraint firstItem="bWe-V7-5oH" firstAttribute="centerX" secondItem="j0R-3N-kPD" secondAttribute="centerX" id="cFZ-Ds-3kJ"/>
+                            <constraint firstItem="kdr-1t-9hb" firstAttribute="top" secondItem="9gc-b8-xUM" secondAttribute="top" constant="67" id="gaw-vt-KLg"/>
+                            <constraint firstItem="9gc-b8-xUM" firstAttribute="bottom" secondItem="EJA-43-aTt" secondAttribute="bottom" constant="52" id="nUJ-6U-cjP"/>
+                            <constraint firstItem="kdr-1t-9hb" firstAttribute="centerX" secondItem="j0R-3N-kPD" secondAttribute="centerX" id="vFc-uw-KW2"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="9gc-b8-xUM"/>
+                    </view>
+                    <connections>
+                        <outlet property="lblCount" destination="kTi-Qr-Yvk" id="kfR-3f-g2q"/>
+                        <outlet property="switchEnableRanging" destination="yIe-uA-4u1" id="hTB-P7-Yoc"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tIq-Tp-1bH" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="834.78260869565224" y="99.776785714285708"/>
+        </scene>
+    </scenes>
+</document>

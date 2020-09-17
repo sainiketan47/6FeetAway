@@ -36,8 +36,7 @@ class ScannerViewController: UIViewController, CLLocationManagerDelegate, CBPeri
         locationManager = CLLocationManager()
         locationManager?.delegate = self
         locationManager?.requestAlwaysAuthorization()
-        
-        
+                
         let options: UNAuthorizationOptions = [.alert, .sound, .badge]
         notificationCenter.requestAuthorization(options: options) {
             (didAllow, error) in

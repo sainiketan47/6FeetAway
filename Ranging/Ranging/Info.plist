@@ -2,8 +2,6 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-	<key>UIViewControllerBasedStatusBarAppearance</key>
-	<true/>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>$(DEVELOPMENT_LANGUAGE)</string>
 	<key>CFBundleDisplayName</key>
@@ -25,20 +23,15 @@
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
 	<key>NSBluetoothAlwaysUsageDescription</key>
-	<string>This app will only use Bluetooth when it needs to advertise.</string>
+	<string>This app will use Bluetooth when it needs to find people near you.</string>
 	<key>NSBluetoothPeripheralUsageDescription</key>
-	<string>This app will only use Bluetooth when it needs to advertise.</string>
+	<string>This app will only use Bluetooth when it needs to find people near you.</string>
 	<key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
-	<string>This is required for monitoring.</string>
+	<string>Location is required for monitoring people near you.</string>
 	<key>NSLocationAlwaysUsageDescription</key>
-	<string>This is required for monitoring.</string>
+	<string>Location is required for monitoring people near you.</string>
 	<key>NSLocationWhenInUseUsageDescription</key>
-	<string>This is required for ranging.</string>
-	<key>UIBackgroundModes</key>
-	<array>
-		<string>bluetooth-peripheral</string>
-		<string>location</string>
-	</array>
+	<string>Location is required for monitoring people near you.</string>
 	<key>UILaunchStoryboardName</key>
 	<string>LaunchScreen</string>
 	<key>UIMainStoryboardFile</key>
@@ -60,5 +53,7 @@
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
+	<key>UIViewControllerBasedStatusBarAppearance</key>
+	<true/>
 </dict>
 </plist>
